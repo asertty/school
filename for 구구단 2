@@ -1,0 +1,16 @@
+public static void main(String[] args) {
+		 
+		Scanner sc = new Scanner(System.in);
+		System.out.println("몇단?");
+		
+		int 몇단 =sc.nextInt();
+		int a = sc.nextInt();
+	
+		for(int 곱 = 1; 곱<=a; 곱++ ) {
+			System.out.println(몇단+" * "+곱+" = "+(몇단*곱));
+			
+		}
+		
+	}
+
+}
