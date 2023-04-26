@@ -1,0 +1,26 @@
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		int a = 0;
+		int b = 1;
+		
+		
+		while(true) {
+			System.out.println("현재슷자: "+b);
+			a= a+b;
+			System.out.println("현재합계: "+a);
+			b++;
+			if (b>num) {
+				System.out.println("끝");
+				break;
+			}
+			System.out.println(a);
+			
+		}
+		
+	}
+
+}
