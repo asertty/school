@@ -16,11 +16,15 @@ public static void main(String[] args) {
 			a[i] = sc.nextInt();
 			i++;
 		}
-		System.out.println(a[0]);
-		System.out.println(a[1]);
-		System.out.println(a[2]);
-		System.out.println(a[3]);
-		System.out.println(a[4]);
+		for(int s = 0;s<5; s++) {
+			System.out.println(a[s]);
+			
+		
+//		System.out.println(a[0]);
+//		System.out.println(a[1]);
+//		System.out.println(a[2]);
+//		System.out.println(a[3]);
+//		System.out.println(a[4]);
 	}
 
 }
