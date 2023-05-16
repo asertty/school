@@ -1,13 +1,18 @@
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Fuck U");
+		System.out.println("SUNGIL");
 		
 		char a = 'S';
+		System.out.println(a);
 		char b = 'U';
+		System.out.println(b);
 		char c = 'N';
+		System.out.println(c);
 		char d = 'G';
+		System.out.println(d);
 		char e = 'I';
+		System.out.println(e);
 		char f = 'L';
 		
 		int sum = a+b+c+d+e+f;
