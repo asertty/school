@@ -1,0 +1,29 @@
+package kk;
+
+import java.util.Scanner;
+
+public class kk {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in); 
+		
+		int num = scan.nextInt();
+		
+		int evenSum = 0;
+		int oddSum = 0;
+		
+		for(int i = 1;i<=num;i++) {
+			if(i%2==0) {
+				evenSum = + i;
+			}else if(i%2==1) {
+				oddSum = + i;
+
+			}
+		}
+		
+		System.out.println("짝수합:"+evenSum);
+		System.out.println("홀수합:"+oddSum);
+		
+	}
+
+}
