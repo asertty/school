@@ -1,0 +1,16 @@
+import  random
+rn = random.randrange(1,101,1)
+num = -1
+
+
+
+i = 1
+while True:
+  a = int(input())
+  if  rn < a : 
+    print("다운")
+  if rn > a :
+    print("업")
+  if rn == a:
+   print("정답")
+   break
