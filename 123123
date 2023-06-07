@@ -1,0 +1,117 @@
+package maiin;
+
+import java.util.Scanner;
+
+public class main2 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("\r\n" + 
+				"███████╗██╗   ██╗███╗   ██╗ ██████╗ ██╗██╗          ██████╗███╗   ██╗███████╗███╗   ███╗ █████╗ \r\n" + 
+				"██╔════╝██║   ██║████╗  ██║██╔════╝ ██║██║         ██╔════╝████╗  ██║██╔════╝████╗ ████║██╔══██╗\r\n" + 
+				"███████╗██║   ██║██╔██╗ ██║██║  ███╗██║██║         ██║     ██╔██╗ ██║█████╗  ██╔████╔██║███████║\r\n" + 
+				"╚════██║██║   ██║██║╚██╗██║██║   ██║██║██║         ██║     ██║╚██╗██║██╔══╝  ██║╚██╔╝██║██╔══██║\r\n" + 
+				"███████║╚██████╔╝██║ ╚████║╚██████╔╝██║███████╗    ╚██████╗██║ ╚████║███████╗██║ ╚═╝ ██║██║  ██║\r\n" + 
+				"╚══════╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚══════╝     ╚═════╝╚═╝  ╚═══╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝\r\n" + 
+				"                                                                                                \r\n" + 
+				"");
+		
+		String[][] 자리 = new String[5][5];
+		
+		while(true) {
+			
+			System.out.println("남은자석확인 (1)/ 좌석 예매하기 (2) / 예애 확인하기 (3) / 종료하기(4)");
+			
+			int who = sc.nextInt();
+			
+			switch (who) {
+			
+			case 1 :
+				// 1. 남은 좌석 보기
+				System.out.println("***** 좌석 확인하기  *****");
+				for(int i = 0; i < 자리.length; i++) {
+					for(int j = 0; j < 자리.length; j++) {
+						//System.out.printf("%s", 자리[i][j]);
+						if(자리[i][j] == null) {
+							System.out.print("□  ");
+						}else {
+							System.out.print("■  ");
+						}
+					}
+					System.out.println();
+				}
+				System.out.println("*********************");
+				System.out.println();
+				break;
+			case 2 :
+				// 2. 좌석 예매하기
+				System.out.println("***** 좌석 예매하기  *****");
+				
+				System.out.println("몇 행 ?");
+				int row = sc.nextInt();
+				
+				System.out.println("몇 열 ?");
+				int col = sc.nextInt();
+				
+				if((row >= 0 && row < 5) && (col >= 0 && col < 5)) {
+					
+					System.out.println("이 름 ?");
+					String name = sc.next();
+					
+					if (자리[row][col] == null) {
+						자리[row][col] = name;
+						System.out.println("예매 완료");
+						
+					}else {
+						System.out.println("이미 선책된 자리..다시");
+					}
+				}else {
+					System.out.println("다시 입력");
+				}
+				
+				System.out.println("*********************");
+				System.out.println();
+				break;
+			case 3 :
+				// 3.예매 확인하기
+				System.out.println("***** 예애 확인하기  *****");
+				System.out.print("예약자 성명");
+				String 예약자 = sc.next();
+				
+				for(int i = 0; i < 자리.length; i++) {
+					
+					for(int j = 0; j < 자리.length; j++) {
+						if(자리[i][j] == 예약자) {
+							System.out.println("좌석은 " + i + " 행 "+ j +" 열");
+						} else {
+							System.out.println("예약 내역이 존재 X");
+						}
+					}
+					
+				}
+		
+				System.out.println("*********************");
+				System.out.println();
+				break;
+			case 4 :
+				// 4. 종료하기
+				System.out.println("***** 프로그램 종료  *****");
+				System.exit(0);
+				break;
+			default:
+				System.out.println("***** 올바른 값 입력  *****");
+				
+			}
+			
+			
+		}
+		
+		//영화관 예매 하기
+		//2차원 배열 만들어서
+		//1.남은 좌석 보기
+		//2.예먜 확인하기
+
+	}
+
+}
