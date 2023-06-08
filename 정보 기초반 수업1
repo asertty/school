@@ -1,0 +1,40 @@
+n = input()
+
+if n == "수":
+  print("A")
+elif n == "우":
+  print("B")
+elif n == "미":
+  print("C")
+elif n == "양":
+  print("D")
+elif n == "가":
+  print("E")
+else :
+  print("다시 입력")
+  ----------------------------------------------
+n = int(input())
+
+if n >= 90 and n<=100:
+  print("A")
+elif n >= 70 and n<=89:
+  print("B")
+elif n >= 40 and n<=69:
+  print("C")
+elif n >= 0 and n<=39:
+  print("D")
+else :
+  print("다시 입력")
+  -----------------------------------------------
+  a = int(input())
+print(a)
+----------------------------------------------
+a = input()
+b = input()
+
+print(b)
+print(a)
+--------------------------------------------------
+a,b = input().split()
+
+print(b,a) 
