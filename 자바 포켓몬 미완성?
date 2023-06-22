@@ -1,0 +1,56 @@
+package main;
+
+import java.util.Scanner;
+
+public class Game {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		poketmon p1 = new poketmon("한결이");
+		System.out.println(p1.pno + ":" + p1.name);
+		
+		poketmon p2 = new poketmon();
+		System.out.println(p2.pno + ":" + p2.name);
+		
+		poketmon p3 = new poketmon();
+		System.out.println(p3.pno + ":" + p3.name);
+		
+		
+		//p1.name = "한결이" ;
+		
+
+	}
+
+}
+----------------------------------------------
+package main;
+
+public class poketmon {
+	
+	int pno = 0 ;
+	int level = 1;
+	int hp = 50 ; 
+	int atk = 10 ;
+	String name ;
+	
+	poketmon(){
+		pno ++ ;
+		this.name = "포켓몬" + pno;
+		
+	}
+	poketmon(String name){
+		pno ++ ;
+		this.name = name;
+		
+	}
+	void 레벌업() {
+		level ++ ;
+		hp += 10 ;
+		atk += 2 ;
+	}
+	
+	void 공격() {
+		System.out.println(name + "이 공격한다.");
+	}
+}
