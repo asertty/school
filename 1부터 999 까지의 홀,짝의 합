@@ -1,0 +1,22 @@
+package main;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		
+		int e = 0;
+		int o = 0;
+		
+		for(int i = 1; i <= 999; i++) {
+			if (i%2 == 0) {
+				e = e +i;
+				// e +- i
+			} else {
+				o = o + i;
+			}
+		}
+		System.out.println("짝수합 : " + e + ", 홀수합 : " + o);
+
+	}
+
+}
