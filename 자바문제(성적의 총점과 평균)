@@ -1,0 +1,25 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("몇명?");
+		
+		int 몇명 = sc.nextInt();
+		int score;
+		int sum = 0;
+		
+		for(int i = 0; i < 몇명; i++) {
+			score = sc.nextInt();
+			
+			sum = sum + score;
+		}
+		System.out.println(몇명+"명의 총점은 "+sum+"점 이고, 평균은 "+(float)sum/몇명);
+		
+	}
+
+}
