@@ -42,8 +42,35 @@
 		   
 		        // 총 박수 횟수 출력하기
 		       
-		       
 		    }
-		
 
 	}
+---------------------------------------------------------------------------------------------------
+package main;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		
+		int a = 0;
+		int num ;
+		
+		for(int i = 1; i <= 40; i++) {
+			num = i;
+			while(true) {
+				//i == 3 or i == 6 or i == 9 일때 박수 
+			
+			if (num%10 == 3 || num%10 == 6|| num%10 == 9) {
+				a++;
+			}
+			num = num / 10;
+			if(num == 0) {
+				break;
+				}
+			}
+		}
+		System.out.println(a);
+	}
+
+
+}
