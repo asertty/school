@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- 이 문서는 html5 다. -->
+
+<html lang="ko">
+<!-- 요소 태그 시작 -->
+<!-- 한국어로 ko 로 바꿈 -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>mink</title>
+</head>
+
+<body>
+    <!-- 블록 요소 -->
+    <div class = "c" id = "c">
+        
+        <h3>바람아 불어라</h3>
+        <h2>바람이 분다</h2>
+
+    </div>
+    <!-- 묶어주는 div -->
+
+    <!-- 인라인 요소 -->
+    <spen>바람아 <br>불어라</spen>
+    <br>
+    <!-- 줄 바꿈  br -->
+    <spen>바람이 분다</spen>
+
+
+
+</body>
+
+</html>
+<!-- 요소 태그 종료 -->
