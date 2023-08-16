@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<meta charset="UTF-8">
+<title>0816</title>
+
+
+</head>
+
+<body>
+    <a href="https://www.naver.com">
+        <h1>Lorem Ipsum</h1>
+
+    </a>
+    <div>
+        <h2>소프트웨어개발과</h2>
+        <ul>
+            <li>Java</li>
+            <li>Oracle</li>
+            <li>Web(heml, css, js)</li>
+            <li>Tomcat(Server)</li>
+
+        </ul>
+    </div>
+
+    <div>
+        <h2>소프트웨어개발과</h2>
+        <ol>
+            <li>Java</li>
+            <li>Oracle</li>
+            <li>Web(heml, css, js)</li>
+            <li>Tomcat(Server)</li>
+
+        </ol>
+    </div>
+
+</body>
+
+</html>
