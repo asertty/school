@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<meta charset="UTF-8">
+<title>0816</title>
+
+<!-- 싸가지 없는 김성우!! -->
+
+
+
+</head>
+
+<body>
+    <h1>Lorem Ipsum</h1>
+
+    <div>
+        <h2>What is Lorem Ipsum</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of<br>
+            the printing and typesetting industry.<br>
+            Lorem Ipsum has been the industry's<br>
+            standard dummy text ever since the 1500s,<br>
+            when an unknown printer took a galley of<br>
+            type and scrambled it to make a type<br>
+            specimen book.<br>
+        </p>
+
+    </div>
+
+    <div>     
+        <h2>What is Lorem Ipsum</h2>
+    
+        <p>
+            It is a long established fact that a reader will be<br>
+            distracted by the readable content of a page when looking at its layout.<br>
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,<br>
+            as opposed to using 'Content here, content here',<br>
+            making it look like readable English.<br>
+        </p>
+    </div>
+
+</body>
+
+</html>
