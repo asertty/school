@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>회원가입 페이지</h2>
+    <!-- join.html? id = 입력값 & pw 1234 & gender = 남or여-->
+
+    <form action="jion.html">
+
+
+        <div>아이디</div>
+        <div><input type="text" name="id"></div>
+
+        <div>비밀번호</div>
+        <div><input type="password" name="pw"></div>
+
+
+        <!-- 줄을 바꾸려면 <br> or <div>  -->
+
+        <div>
+            <!-- 라디오버튼 -->
+            <div>성별을 선택하세요.</div>
+
+            남자 <input type="radio" name="gender" value="남"> <br>
+
+            여자 <input type="radio" name="gender" value="여"> <br>
+
+            해당없음 <input type="radio" name="gender" value="없음"> <br>
+
+        </div>
+
+        <div>학년</div>
+        <div>
+            <select name="gender">
+                <option value="선택">---선택---</option>
+                <option value="1학년">1학년</option>
+                <option value="2학년">2학년</option>
+                <option value="3학년">3학년</option>
+
+            </select>
+        </div>
+
+        <input type="submit" value="회원가입">
+    </form>
+
+</body>
+
+</html>
