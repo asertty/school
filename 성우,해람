@@ -1,0 +1,113 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+stock_record = []
+bot_record = []
+turn = 0
+턴수 = int(input('턴 수 : '))
+시작주가 = int(input('시작 주가 : '))
+시드머니 = int(input('봇 시드머니 : '))
+stock = 시작주가
+bot_money = 시드머니
+bot_stock = 0
+bot_buy = 0
+bot_short = 0
+
+for a in range(턴수) : 
+  print('')
+  print('---------------------------')
+  turn = turn + 1
+  up_down_range = np.random.rand()
+  if up_down_range < 0.2 :
+    stock_up_down = np.random.randint(-30000, -6999)
+  elif up_down_range >= 0.2 and up_down_range <= 0.78 :
+    stock_up_down = np.random.randint(-7000, 7001)
+  elif up_down_range > 0.78 and up_down_range <= 0.79 :
+    stock_up_down = np.random.randint(stock * 0.2, stock * 0.4)
+  elif up_down_range > 0.79 and up_down_range <= 0.8 and stock >= 120000 :
+    stock_up_down = np.random.randint(-stock * 0.4 , -stock * 0.1)
+  else :
+    stock_up_down = np.random.randint(7001, 30001)
+  
+  if stock + stock_up_down <= 0 :
+    stock_up_down = abs(stock_up_down)
+    stock = stock + stock_up_down
+  else :
+    stock = max(1, stock + stock_up_down)
+  stock_record.append(stock)
+
+  plt.plot(stock_record)
+  plt.xlabel('turn')
+  plt.ylabel('stock')
+  print('')
+  print('턴 ' + str(turn))
+  plt.show()
+  print('주가 변동 : ' + str(stock_up_down) + '원')
+  print('현재 주가 : ' + str(stock) + '원')
+  print('봇 보유 금액 : ' + str(bot_money) + '원')
+  print('봇 보유 주식 : ' + str(bot_stock) + '주')
+  print('')
+
+  if bot_stock > 0 and bot_buy < stock and np.random.rand() > 0.3 :
+    bot_amount = np.random.randint(1, bot_stock+1)
+    bot_money = bot_money + bot_amount * stock
+    bot_stock = bot_stock - bot_amount
+    bot_record.append(-bot_amount)
+    print('')
+    print('봇이 ' + str(bot_amount) + '주 매도하였습니다.')
+  elif stock > 70000 and bot_buy < stock and np.random.rand() > 0.7:
+    bot_amount = np.random.randint(1, 21 + bot_stock)
+    bot_money = bot_money + bot_amount * stock
+    bot_stock = bot_stock - bot_amount
+    bot_record.append(-bot_amount)
+    bot_short = stock
+    print('')
+    print('봇이 ' + str(bot_amount) + '주 공매도하였습니다.')
+  elif bot_short > stock and bot_stock < 0:
+    bot_amount = np.random.randint(abs(bot_stock), abs(bot_stock) + 5)
+    bot_money = bot_money - bot_amount * stock
+    bot_stock = bot_stock + bot_amount
+    bot_buy = stock
+    bot_short = 0
+    bot_record.append(bot_amount)
+    print('')
+    print('봇이 ' + str(bot_amount) + '주 매수하였습니다.')
+  elif bot_buy * 0.5 < stock and bot_money // stock > 1 :
+    bot_amount = np.random.randint(1, (bot_money // stock) + 1)
+    bot_money = bot_money - bot_amount * stock
+    bot_stock = bot_stock + bot_amount
+    bot_buy = stock
+    bot_record.append(bot_amount)
+    print('')
+    print('봇이 ' + str(bot_amount) + '주 매수하였습니다.')
+  elif np.random.rand() > 0.5 and bot_money // stock > 1 :
+    bot_amount = np.random.randint(1, (bot_money // stock) + 1)
+    bot_money = bot_money - bot_amount * stock
+    bot_stock = bot_stock + bot_amount
+    bot_buy = stock
+    bot_record.append(bot_amount)
+    print('')
+    print('봇이 ' + str(bot_amount) + '주 매수하였습니다.')
+  else :
+    bot_record.append(0)
+
+
+
+final_stock = max(1, stock_record[-1] + np.random.randint(-50000, 50001))
+stock_record.append(final_stock)
+bot_result = bot_money + bot_stock * final_stock
+
+if bot_stock != 0 :
+  bot_record.append(-bot_stock)
+else :
+  bot_record.append(0)
+
+print('---------------------------------')
+print('주가 변동 내역 : ' + str(stock_record))
+print('시작 주가 : ' + str(시작주가) + '원')
+print('최종 주가 : ' + str(stock_record[-1]) + '원')
+print('')
+print('봇 시드머니 : ' + str(시드머니) + '원')
+print('봇 최종 보유 금액 : ' + str(bot_result) + '원')
+print('봇 거래 내역 : ' + str(bot_record))
+print('수익률 : ' + str(round((bot_result - 시드머니) / 시드머니 * 100.0, 2)) + '%')
