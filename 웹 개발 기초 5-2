@@ -8,7 +8,7 @@
 
 <body>
     <h2>표(table)</h2>
-    <table border="1"> <!-- border 수가 커질수록 테이블 두께가 두껴워짐 -->
+    <table border="1"> <!-- border 수가 커질수록 테이블 두께가 두꺼워짐 -->
         <tr>
 
             <th style="width : 100px;">이름</th><!-- style="width : 100px;" = 칸 넓히기 -->
