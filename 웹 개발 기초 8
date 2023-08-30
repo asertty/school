@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> css 시간</h1>
+
+    <div class="didiv">
+        <h2>ul-li 태그</h2>
+        <!-- ui>li*3 -->
+        <ul>
+            <li><a href="#">HTMl</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+        </ul>
+    </div>
+
+    <div class="didiv">
+        <h2>이미지 태그</h2>
+        <img src="urbanbrush-20210611102855770634.jpg" alt="">
+
+    </div>
+
+    <div class="didiv">
+        <h2>문단 태그</h2>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur<br>
+            adipisicing elit. Illum earum excepturi<br>
+            magnam sequi quisquam perspiciatis voluptatibus<br>
+            laboriosam rerum voluptas! Magnam ad odio distinctio<br>
+            repudiandae officiis quam beatae voluptates optio assumenda?<br>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
+------------------------------------------------------------------------------
+* {
+    font-family: '굴림체';
+    background-color: rgba(121, 137, 224, 0.952);
+}
+
+img {
+    width: 300px
+}
+
+P {
+    width: 300PX;
+}
+
+.didiv>h2 {
+    background-color: bisque;
+}
+
+.didiv h2 {
+    background-color: bisque;
+}
