@@ -51,7 +51,7 @@ while True:
     if checkUser(user):
         com = random.randint(0,2)
         print(f'\t결과 -> 사용자({selStr[0][user]}) 컴퓨터({selStr[0][com]})')
-        result = checkWin(user, com)
+        result = an(user, com)
 
         if result == 2:
             print('\t비겼습니다. 가위 바위 보 다시합니다.')
