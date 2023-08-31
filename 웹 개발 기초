@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styel.css">
+</head>
+
+<body>
+    <img src="http://127.0.0.1:5500/images.png" alt="cat">
+    <h1>멍청이</h1>
+
+    <div>
+        <h2 class="kind">망그러진 곰</h2>
+        <ul class="cat">
+            <li> <a
+                    href="https://namu.wiki/w/%EB%A7%9D%EA%B7%B8%EB%9F%AC%EC%A7%84%EA%B3%B0?from=%EB%A7%9D%EA%B7%B8%EB%9F%AC%EC%A7%84%20%EA%B3%B0">꼬질한
+                    곰</a></li>
+            <li> <a href="https://namu.wiki/w/%EC%9B%90%ED%94%BC%EC%8A%A4(%EB%93%9C%EB%9D%BC%EB%A7%88)">웃는
+                    곰</a></li>
+            <li> <a
+                    href="https://namu.wiki/w/%EC%9D%B4%20%EC%B0%A8%EB%8A%94%20%EC%9D%B4%EC%A0%9C%20%EC%A0%9C%20%EA%B2%81%EB%8B%88%EB%8B%A4?from=%EC%9D%B4%20XX%EB%8A%94%20%EC%9D%B4%EC%A0%9C%20%EC%A0%9C%20%EA%B2%81%EB%8B%88%EB%8B%A4">춤추는
+                    곰</a></li>
+
+        </ul>
+
+    </div>
+
+    <div>
+        <h2 class="kind">Lorem</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur <br>
+            adipisicing elit. Cupiditate aliquid dolor <br>
+            magni maxime, temporibus maiores asperiores <br>
+            reprehenderit laudantium aperiam, reiciendis atque quam, <br>
+            enim modi in error officiis quis voluptatibus quas? <br>
+        </p>
+
+    </div>
+</body>
+
+</html>
+--------------------------------------------------------------------------------------------------
+* {
+    font-family: "궁서";
+}
+
+.kind {
+    color: darkblue;
+}
+
+[class="kind"] {
+    color: red;
+}
+
+a {
+    display: block;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
+/* block =  줄을 다 차지 */
+
+a:link {
+    font-size: 2rem;
+}
+
+a:visited {
+    color: cadetblue;
+}
+
+a:hover {
+    background-color: red;
+    color: white;
+
+}
+
+.cet:first-child
+/* inline = 내 크기 만큼만 차지 */
