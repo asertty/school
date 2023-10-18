@@ -1,0 +1,53 @@
+print("구하고 싶은 종류 선택")
+print("1) 더하기, 2) 빼기, 3) 곱하기, 4) 나누기, 5) 제곱, 6)나머지, 7) 몫, 8) 원의 넓이, 9) 삼각형의 넓이, 10) 사각형의 넓이")
+b=(input())                      
+
+pie = 3.1415
+
+if b=="1":
+    a= int(input())
+    c=int(input())                         
+    print(a,"+",c,"=",a+c)  
+elif b=="2":
+  a= int(input())
+  c=int(input())                         
+  print(a,"-",c,"=",a-c)  
+
+elif b=="3":                        
+    a= int(input())
+    c=int(input())
+    print(a,"*",c,"=",a*c)      
+
+elif b=="4":                        
+  a= int(input())
+  c=int(input())
+  print(a,"/",c,"=",a/c)    
+
+elif b=="5":                         
+  a= int(input())
+  c=int(input())
+  print(a,"**",c,"=",a**c)   
+
+elif b=="6":                         
+  a= int(input())
+  c=int(input())
+  print(a,"%",c,"=",a%c)
+
+elif b=="7":                         
+  a= int(input())
+  c=int(input())
+  print(a,"//",c,"=",a//c)  
+
+elif b=="8":
+  d = int(input("반지름:"))
+  print(round(d*d*pie,3))
+
+elif b=="9":
+  a = int(input("밑변:"))
+  c = int(input("높이:"))
+  print(a*c)
+    
+elif b=="10" :
+  a = int(input("밑변:"))
+  c = int(input("높이:"))
+  print(a*c)
