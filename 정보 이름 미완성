@@ -1,0 +1,51 @@
+
+from turtle import*
+
+
+
+forward(20)
+left(1)
+forward(20)
+right(135)
+forward(45)
+left(180)
+forward(20)
+right(90)
+forward(25)
+left(135)
+forward(60)
+right(180)
+forward(80)
+left(90)
+forward(80)
+left(90)
+forward(100)
+left(180)
+forward(20)
+right(90)
+forward(20)
+left(180)
+forward(20)
+right(90)
+forward(20)
+right(90)
+forward(35)
+
+for i in range(360):
+    forward(0.3)
+    right(1)
+
+for i in range(180):
+    forward(0.3)
+    right(1)
+
+left(180)
+forward(30)
+right(180)
+forward(60)
+left(180)
+forward(30)
+right(90)
+forward(20)
+
+
