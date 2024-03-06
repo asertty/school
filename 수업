@@ -1,0 +1,28 @@
+
+import java.util.Arrays;
+
+public class main {
+
+	public static void main(String[] args) {
+		int[] a = new int[] {31, 25, 12, 22, 11};
+
+//			인덱스 값 1부터 시작 
+		for (int i = 1; i < a.length; i++) {
+			for (int j = i; j > 0; j--) {
+				if (a[j-1] > a[j]) {
+					
+//					  뒤값 > 앞값
+					int temp = a[j-1];
+					a[j-1] = a[j];
+					a[j] = a[j-1];
+//				작은건 앞으로 큰것은 뒤로 자리 바꿈
+				}
+			}
+		}
+		System.out.println(Arrays.toString(a));
+		
+		}
+
+	}
+
+
