@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>백신접종예약</title>
+	<style>
+		table, th, td { border: 1px solid ; }
+	</style>
+</head>
+
+<body>
+<form action="#" method ="post">
+	<table>
+	
+		<tr>
+			<th>예약번호</th>
+			<td><input type="text" name="student_name">예)20210011</td>
+		</tr>
+		
+		<tr>
+			<th>주민번호</th>
+			<td><input type="text" name="student_name">예)790707-1111111</td>
+		</tr>
+		
+		<tr>
+			<th>백신코드</th>
+			<td>
+			<form>
+				<select name="백신">
+					<option value="apple" selected> 백신선택
+					<option value="orange"> A백신
+					<option value="strawberry"> B백신
+					<option value="peach"> C백신
+				</select>
+				예)V001, V002, V003
+			</form>
+			</td>	
+		</tr>
+		
+		<tr>
+			<th>병원코드</th>
+			<td>
+				<form>
+					<input type="radio" name="lecture" value="가_병원"> 가_병원
+					<input type="radio" name="lecture" value="나_병원"> 나_병원 
+					<input type="radio" name="lecture" value="다_병원"> 다_병원
+					<input type="radio" name="lecture" value="라_병원"> 라_병원
+					예)H001, H002, H003, H004
+			</form>
+			</td>
+		</tr>
+		
+		<tr>
+			<th>병원코드</th>
+			<td>
+				<form>
+					<input type="checkbox" name="lecture" value="가_병원"> 가_병원 
+					<input type="checkbox" name="lecture" value="나_병원"> 나_병원
+					<input type="checkbox" name="lecture" value="다_병원"> 다_병원
+					<input type="checkbox" name="lecture" value="라_병원"> 라_병원
+					예)H001, H002, H003, H004
+				</form>
+			</td>
+		</tr>
+		
+		<tr>
+			<th>예약날짜</th>
+			<td><input type="text" name="student_name">예)20210001</td>		
+		</tr>
+		
+		<tr>
+			<th>예약날짜</th>
+			<td><input type="text" name="student_name">예)0930,1130</td>		
+		</tr>
+		
+		<tr>
+				<th>
+				<input type="submit" value="등록">
+				</th>
+				<th>
+				<input type="reset" value="취소">
+				</th> 
+		</tr>
+	
+
+	</table>
+</form>
+
+</body>
+</html>
